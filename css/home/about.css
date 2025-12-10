@@ -207,6 +207,7 @@
   justify-content: space-between;
   padding: 2px 32px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .hp-bar {
@@ -215,13 +216,14 @@
   align-items: center;
 }
 
-.hp-bar::after {
+.hp-bar-sep {
   content: "";
   display: block;
   height: 8px;
-  width: 150px;
+  width: 60%;
   background: var(--nc3);
   margin-left: 2px;
+  margin-right: 32px;
 }
 
 .skills {
