@@ -22,6 +22,7 @@ a {
 
 ul {
   list-style: none;
+  padding: 0 24px;
 }
 
 .container {
@@ -40,12 +41,6 @@ ul {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1600px) {
-  .container-2 {
-    padding: 64px 0;
-  }
-}
-
 .container3 {
   position: relative;
   max-width: 900px;
@@ -56,15 +51,22 @@ ul {
   margin-right: auto;
 }
 
-.container-cv {
-  position: relative;
-  max-width: 1300px;
-  box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+.tinysquare {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc3);
+  transition: 0.1s;
+}
+
+.tinysquare1 {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc-contrast);
+  transition: 0.1s;
 }
 
 .project-title {
@@ -126,9 +128,38 @@ ul {
   left: 50%;
 }
 
+.footer-bg {
+  margin: 32px 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 4px solid var(--c1);
+  width: 100%;
+  padding: 32px 64px;
+}
+
+.footer-menu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer-menu li:hover .tinysquare1 {
+  width: 18px;
+  transition: 0.1s;
+}
+
 @media (max-width: 1600px) {
   .container {
     padding: 0 100px;
+  }
+
+  .container-2 {
+    padding: 64px 0;
   }
 }
 

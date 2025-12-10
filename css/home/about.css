@@ -149,25 +149,8 @@
   margin-bottom: 12px;
 }
 
-.tinysquare {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background: no-repeat center var(--nc3);
-  transition: 0.1s;
-}
-
 .about-txt:hover .tinysquare {
   width: 40px;
-}
-
-.tinysquare1 {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background: no-repeat center var(--nc-contrast);
 }
 
 .about-txt-long > :nth-child(-n + 4) {
@@ -296,6 +279,17 @@
   .lines-2 {
     top: 21%;
     left: -1850px;
+  }
+}
+
+@media (max-width: 1535px) {
+  .lines-1 {
+    top: 27%;
+    left: -1206px;
+  }
+  .lines-2 {
+    top: 27%;
+    left: -1816px;
   }
 }
 
