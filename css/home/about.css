@@ -277,24 +277,35 @@
   position: relative;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1799px) {
   .lines-1 {
-    top: 25%;
-    left: -1275px;
+    top: 21%;
+    left: -1340px;
   }
   .lines-2 {
-    top: 25%;
-    left: -1888px;
+    top: 21%;
+    left: -1850px;
+  }
+}
+
+@media (max-width: 1600px) {
+  .lines-1 {
+    top: 21%;
+    left: -1340px;
+  }
+  .lines-2 {
+    top: 21%;
+    left: -1850px;
   }
 }
 
 @media (max-width: 1484px) {
   .lines-1 {
-    top: 25%;
+    top: 35%;
     left: -1340px;
   }
   .lines-2 {
-    top: 25%;
+    top: 35%;
     left: -1850px;
   }
 }

@@ -226,10 +226,15 @@ h1 {
 @keyframes move-left {
   0% {
     left: 50%;
-    top: 200%;
+    top: 700%;
   }
 
   50% {
+    left: 50%;
+    top: 50%;
+  }
+
+  55% {
     left: 50%;
     top: 50%;
   }
