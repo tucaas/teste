@@ -1,0 +1,113 @@
+.fmenu {
+  font: 900 1.125rem/1.5 "Red Hat Display", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.fscroll {
+  font: 300 1.5rem/1.5 "Red Hat Display", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.f1 {
+  font: 600 1.25rem/1.5 "Red Hat Display", sans-serif;
+}
+
+.f1-l {
+  font: 300 1.25rem/1.5 "Red Hat Display", sans-serif;
+}
+
+.f2 {
+  font: 600 1rem/1.5 "Red Hat Display", sans-serif;
+}
+
+.f3 {
+  font: 400 1.5rem/1.5 "Red Hat Display", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.ft {
+  font: 900 3.75rem "Red Hat Display", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.fmain {
+  font: 100 3rem "Red Hat Display", sans-serif;
+  height: 76px;
+}
+
+@media (max-width: 1600px) {
+  .fmain {
+    font: 100 2.5rem "Red Hat Display", sans-serif;
+    height: 56px;
+  }
+}
+
+.fn {
+  font: 400 2.125rem "Red Hat Display", sans-serif;
+}
+
+.fs {
+  font: 600 2rem "Red Hat Display", sans-serif;
+}
+
+.st {
+  font: 400 2rem "red hat display", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.sp {
+  font: 300 1.375rem "red hat display", sans-serif;
+}
+
+@media (max-width: 1200px) {
+  .fmenu {
+    font-size: 1rem;
+  }
+  .fs {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 800px) {
+  .fs {
+    font-size: 1.5rem;
+  }
+  .st {
+    font-size: 1.5rem;
+  }
+  .ft {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fscroll {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .fscroll {
+    font-size: 0.75rem;
+  }
+  .ft {
+    font-size: 2.5rem;
+  }
+  .f2 {
+    font-size: 1rem;
+    letter-spacing: 0em;
+  }
+  .f3 {
+    font-size: 1.25rem;
+    line-height: 100%;
+  }
+  .f1 {
+    font-size: 1rem;
+    /* line-height: 150%; */
+  }
+}
+@media screen and (max-width: 420px) {
+  .ft {
+    font-size: 2rem;
+  }
+  .sp {
+    font-size: 0.75rem;
+  }
+}

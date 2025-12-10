@@ -1,0 +1,11 @@
+@import "./utilities/global.css";
+@import "./utilities/colors.css";
+@import "./utilities/font.css";
+
+@import "./home/home.css";
+@import "./home/about.css";
+@import "./home/exp.css";
+@import "./home/port.css";
+@import "./home/edu.css";
+
+@import "./projects/gametrack.css";

@@ -1,0 +1,111 @@
+.education {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  z-index: 9;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.education-box {
+  min-width: 33%;
+  user-select: none;
+  box-sizing: border-box;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.edu-internal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+}
+
+.place {
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.separator-edu {
+  content: "";
+  width: 100%;
+  display: block;
+  margin: 0 4px;
+  height: 1px;
+  background: var(--nc4);
+}
+
+.hide {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.year {
+  white-space: nowrap;
+  background-color: var(--nc3);
+  padding: 1px;
+  background: inherit;
+}
+
+.educations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviews {
+  width: auto;
+  max-width: 66%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.review-txt > :nth-child(-n + 4) {
+  margin-bottom: 32px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.separator-edu-bottom {
+  margin: 18px auto;
+  display: flex;
+  content: "";
+  height: 1px;
+  width: 98%;
+  background-color: var(--nc4);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.separator-edu-bottom::before,
+.separator-edu-bottom::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  rotate: 45deg;
+  margin: -18px;
+  background: var(--nc4);
+}
+
+@media (max-width: 1475px) {
+  .education-box {
+    min-width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .education {
+    flex-direction: column;
+    gap: 34px;
+  }
+  .reviews {
+    width: 100%;
+    max-width: 100%;
+  }
+}

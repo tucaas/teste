@@ -1,0 +1,298 @@
+.about-bg {
+  padding: 80px 0;
+  margin-top: -31px;
+  background: var(--nc3);
+  position: relative;
+  z-index: 8;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: inset 0 -108px var(--nc);
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  z-index: 9;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.lines-1 {
+  position: absolute;
+  top: 15%;
+  left: -1256px;
+  width: 2500px;
+  display: flex;
+  flex-direction: column;
+  rotate: 30deg;
+  gap: 50px;
+}
+
+.lines-2 {
+  position: absolute;
+  top: 15%;
+  left: -1864px;
+  width: 2500px;
+  display: flex;
+  flex-direction: column;
+  rotate: 30deg;
+  gap: 50px;
+}
+
+.lines-3 {
+  position: absolute;
+  bottom: 58%;
+  left: 65%;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  rotate: 210deg;
+  gap: 50px;
+}
+
+.line1 {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--nc2);
+}
+
+.line7 {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: var(--nc4);
+}
+
+.lines-3 > :nth-child(1) {
+  width: 1075px;
+}
+
+.spinny-in {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  z-index: 9;
+  opacity: 0.7;
+  animation-name: spinny1;
+  animation-delay: -5s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.spinny-out {
+  position: absolute;
+  top: -20%;
+  left: -10%;
+  z-index: 9;
+  opacity: 0.7;
+  transform: scale(1.2);
+  animation-name: spinny-out;
+  animation-delay: -5s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+@keyframes spinny1 {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes spinny-out {
+  0% {
+    rotate: 0deg;
+  }
+
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.spinny-r {
+  position: absolute;
+  top: 50%;
+  left: 85%;
+  transform: scale(4);
+  z-index: 8;
+  animation-name: spinny1;
+  animation-delay: -5s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.about-txt {
+  width: 66%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.about-title {
+  width: auto;
+  background-color: var(--nc-contrast);
+  padding: 6px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tinysquare {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc3);
+  transition: 0.1s;
+}
+
+.about-txt:hover .tinysquare {
+  width: 40px;
+}
+
+.tinysquare1 {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc-contrast);
+}
+
+.about-txt-long > :nth-child(-n + 4) {
+  margin-bottom: 32px;
+}
+
+.status-box {
+  width: 33%;
+  background: var(--nc-trans-1);
+  user-select: none;
+  box-sizing: border-box;
+  z-index: 8;
+}
+
+.status-box:hover .tinysquare {
+  width: 40px;
+}
+
+.status-box-bg {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px;
+  gap: 8px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.status-internal {
+  background: var(--nc-trans-2);
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.exp,
+.hp {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 32px;
+  box-sizing: border-box;
+}
+
+.hp-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hp-bar::after {
+  content: "";
+  display: block;
+  height: 8px;
+  width: 150px;
+  background: var(--nc3);
+  margin-left: 2px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+  padding: 0px 32px;
+}
+
+.skill {
+  padding: 3px 6px;
+  background: var(--nc0);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.2s ease;
+  user-select: none;
+}
+
+.skill:hover {
+  background-color: var(--nc4);
+  color: var(--nc0);
+  transition: 0.2s ease;
+}
+
+.skill:hover p {
+  color: var(--nc0);
+  transition: 0.2s ease;
+}
+
+.skill::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 5px;
+  background: var(--nc-contrast);
+  margin-right: 2px;
+  transition: 0.2s ease;
+}
+
+.skill:hover::before {
+  background: var(--nc0);
+  transition: 0.2s ease;
+}
+
+.separator-about {
+  background-image: url(../../img/angle-dark.svg);
+  min-height: 57px;
+  z-index: -1;
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+  .lines-1 {
+    top: 25%;
+    left: -1275px;
+  }
+  .lines-2 {
+    top: 25%;
+    left: -1888px;
+  }
+}
+
+@media (max-width: 1484px) {
+  .lines-1 {
+    top: 25%;
+    left: -1340px;
+  }
+  .lines-2 {
+    top: 25%;
+    left: -1850px;
+  }
+}
