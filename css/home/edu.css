@@ -1,14 +1,14 @@
 .education {
-  display: flex;
-  flex-direction: row;
-  gap: 64px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
   z-index: 9;
   padding-bottom: 15px;
   position: relative;
 }
 
 .education-box {
-  min-width: 33%;
+  min-width: 100%;
   user-select: none;
   box-sizing: border-box;
   z-index: 8;
@@ -57,7 +57,7 @@
 
 .reviews {
   width: auto;
-  max-width: 66%;
+  max-width: 100%;
   box-sizing: border-box;
   z-index: 10;
 }
@@ -101,8 +101,7 @@
 
 @media (max-width: 1200px) {
   .education {
-    flex-direction: column;
-    gap: 34px;
+    grid-template-columns: 1fr;
   }
   .reviews {
     width: 100%;

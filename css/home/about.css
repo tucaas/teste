@@ -10,9 +10,10 @@
 }
 
 .about {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   flex-direction: row;
-  gap: 64px;
+  gap: 32px;
   z-index: 9;
   padding-bottom: 15px;
   position: relative;
@@ -131,7 +132,7 @@
 }
 
 .about-txt {
-  width: 66%;
+  width: 100%;
   box-sizing: border-box;
   z-index: 10;
 }
@@ -158,7 +159,7 @@
 }
 
 .status-box {
-  width: 33%;
+  width: 100%;
   background: var(--nc-trans-1);
   user-select: none;
   box-sizing: border-box;
@@ -301,5 +302,8 @@
   .lines-2 {
     top: 35%;
     left: -1850px;
+  }
+  .about {
+    grid-template-columns: 1fr;
   }
 }

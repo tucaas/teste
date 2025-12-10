@@ -165,17 +165,24 @@ ul {
 
 @media screen and (max-width: 1200px) {
   .container {
-    max-width: 90%;
+    padding: 0 80px;
   }
   .burger {
     display: block;
   }
 }
+
 @media screen and (max-width: 800px) {
   body {
     padding-top: 80px;
   }
   .intro.container-2 {
     height: 400px;
+  }
+  .container {
+    padding: 0 32px;
+  }
+  .footer {
+    padding: 32px 16px;
   }
 }
