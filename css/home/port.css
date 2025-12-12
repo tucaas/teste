@@ -250,8 +250,8 @@
 }
 
 .iris:hover .iris-logo img {
-  top: 30%;
-  transition: 0.2s;
+  transform: scale(0.5) translateX(-45%) translateY(-25%);
+  transition: 0.4s;
 }
 
 .bike {

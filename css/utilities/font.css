@@ -100,7 +100,13 @@
   }
   .f1 {
     font-size: 1rem;
-    /* line-height: 150%; */
+  }
+  .fmain {
+    font-size: 1.75rem;
+    height: 42px;
+  }
+  .fn {
+    font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 420px) {
@@ -108,6 +114,6 @@
     font-size: 2rem;
   }
   .sp {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }

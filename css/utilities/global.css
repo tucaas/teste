@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-anchor: none;
 }
 
 body {
@@ -173,14 +174,14 @@ ul {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    padding-top: 80px;
-  }
   .intro.container-2 {
     height: 400px;
   }
   .container {
     padding: 0 32px;
+  }
+  .container-2 {
+    padding: 38px 0;
   }
   .footer {
     padding: 32px 16px;

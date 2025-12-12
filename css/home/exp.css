@@ -118,14 +118,14 @@
 
 .floaty4 {
   left: 7%;
-  top: 660px;
+  top: 630px;
   rotate: 180deg;
   animation-duration: 12s;
 }
 
 .floaty5 {
   left: 37%;
-  top: 650px;
+  top: 610px;
 }
 
 .floaty6 {
@@ -145,7 +145,6 @@
   top: 280px;
   rotate: 180deg;
   animation-duration: 10s;
-  z-index: -1;
 }
 
 .floaty9 {
@@ -180,10 +179,65 @@
   .exp-blocks {
     grid-template-columns: 1fr 1fr;
   }
+  .floaty3 {
+    right: 2%;
+    top: 600px;
+  }
+  .floaty4 {
+    left: 3%;
+    top: 660px;
+  }
+  .floaty5 {
+    left: 30%;
+    top: 850px;
+  }
+  .floaty6 {
+    top: 720px;
+    z-index: -1;
+  }
+  .floaty7 {
+    top: 600px;
+  }
+  .floaty8 {
+    z-index: -1;
+  }
+  .floaty9 {
+    left: 49.5%;
+    top: 600px;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1100px) {
   .exp-blocks {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .separator-exp {
+    background-image: url(../../img/separator-exp.svg);
+    min-height: 125px;
+    z-index: 9;
+    margin-top: -24px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .floaty4 {
+    top: 1650px;
+  }
+  .floaty5 {
+    top: 1690px;
+  }
+  .floaty7 {
+    top: 1685px;
+    z-index: -1;
+  }
+  .floaty9 {
+    left: 2%;
+
+    top: 1050px;
   }
 }

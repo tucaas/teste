@@ -175,6 +175,10 @@ h1 {
   user-select: none;
 }
 
+.intr-txt-info h1 {
+  width: 100%;
+}
+
 .intr-txt-info h1::before,
 .intr-txt-info h1::after {
   content: "";
@@ -183,7 +187,7 @@ h1 {
   background: var(--nc-contrast);
   display: block;
   position: absolute;
-  transition: 0.2s ease-in-out;
+  transition: 0.15s ease-in-out;
 }
 
 .intr-txt-info h1::before {
@@ -341,5 +345,100 @@ h1 {
 @media (max-width: 1600px) {
   .frame {
     height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .foto {
+    transform: translate(-18%, -50%) scale(1.2);
+  }
+  @keyframes move-left {
+    0% {
+      left: 28%;
+      top: 700%;
+    }
+
+    50% {
+      left: 28%;
+      top: 50%;
+    }
+
+    55% {
+      left: 28%;
+      top: 50%;
+    }
+
+    90% {
+      left: 28%;
+      top: 50%;
+      opacity: 1;
+    }
+
+    91% {
+      left: 28%;
+      top: 50%;
+      opacity: 1;
+    }
+
+    92% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    93% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    94% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    95% {
+      left: 28%;
+      top: 50%;
+      opacity: 1;
+    }
+
+    96% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    97% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    98% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+
+    99% {
+      left: 28%;
+      top: 50%;
+      opacity: 0.8;
+    }
+    100% {
+      left: 28%;
+      top: 50%;
+      opacity: 1;
+    }
+  }
+  .intr-txt-info {
+    background: var(--nc-trans-2);
+    padding: 0 4px;
+  }
+  .intro-txt {
+    left: 50%;
+    top: 72%;
   }
 }
