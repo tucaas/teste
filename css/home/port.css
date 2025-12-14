@@ -31,6 +31,7 @@
   text-align: left;
   transition: opacity 0.3s;
   opacity: 0;
+  z-index: -99;
   background-image: linear-gradient(to top, black, transparent);
 }
 
@@ -56,6 +57,7 @@
 .work:hover .link-container {
   display: flex;
   transition: opacity 0.6s ease;
+  z-index: 2;
   opacity: 1;
 }
 
@@ -350,9 +352,6 @@
   }
 
   .work:hover {
-    grid-column: span 5;
-    grid-area: 1;
     width: 100%;
-    transition: all 0.2s ease;
   }
 }
