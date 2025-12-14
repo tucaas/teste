@@ -326,3 +326,33 @@
     height: 300px;
   }
 }
+
+@media (max-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .portfolio > :nth-child(1) {
+    grid-column: span 5;
+  }
+
+  .portfolio > :nth-child(1) .link-container {
+    opacity: 1;
+  }
+
+  .portfolio > :nth-child(1) .separator {
+    width: 100%;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .work:hover {
+    grid-column: span 5;
+    grid-area: 1;
+    width: 100%;
+    transition: all 0.2s ease;
+  }
+}
