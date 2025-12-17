@@ -4,7 +4,7 @@
 
 .gt-header {
   width: 100%;
-  height: 350px;
+  height: 410px;
   overflow: hidden;
   transition: all 0.2s ease;
   position: relative;
@@ -29,10 +29,10 @@
 
 @keyframes bgmove {
   0% {
-    background-position: 0 -28px;
+    background-position: 0 -50px;
   }
   100% {
-    background-position: -100vw -28px;
+    background-position: -100vw -50px;
   }
 }
 
@@ -51,10 +51,74 @@
 .gt-header .gt-logo img {
   max-width: 80%;
   max-height: 80%;
-  transform: translateY(10%);
+  transform: translateY(20%);
   margin-left: 32px;
   place-content: center;
   max-width: 90%;
   z-index: 9;
   transition: 0.3s;
+}
+
+.work-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.gt-txt-1,
+.gt-txt-2 {
+  width: 100%;
+}
+
+.gt-title {
+  width: auto;
+  background-color: var(--nc-contrast);
+  padding: 6px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+  margin-top: 38px;
+}
+
+.gt-txt > :nth-child(-n + 4),
+.wire-txt-box > :nth-child(-n + 4) {
+  margin-bottom: 24px;
+}
+
+.wireframing {
+  display: flex;
+  flex-direction: column;
+}
+
+.wire-img-1 {
+  width: 48%;
+}
+
+.wire-img-2 {
+  width: 60%;
+}
+
+.wire-img-1 img {
+  width: 100%;
+}
+
+.wire-img-2 img {
+  width: 100%;
+}
+
+.wire-txt-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.wire-txt-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
 }
