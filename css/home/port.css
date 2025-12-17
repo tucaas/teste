@@ -13,6 +13,10 @@
   user-select: none;
 }
 
+.portfolio-internal .work {
+  width: 25%;
+}
+
 .work:hover {
   width: 50%;
   transition: all 0.2s ease;
@@ -87,26 +91,33 @@
   z-index: 8;
 }
 
-.gt-bg1 img,
-.gt-bg1-2 img,
 .gt-bg2 img,
 .gt-bg3 img,
 .gt-logo img {
   position: absolute;
 }
 
-.gt-bg1 img {
-  left: 0%;
-  width: 800px;
-  opacity: 30%;
-  transition: 0.3s;
+.work .gt-bg-movin {
+  background-image: url("../../img/gt-bg1.png");
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  position: absolute;
+  opacity: 0.35;
+  background-position: 0 -28px;
 }
 
-.gt-bg1-2 img {
-  left: 102%;
-  width: 800px;
-  opacity: 30%;
-  transition: 0.3s;
+.work:hover .gt-bg-movin {
+  animation: bgmove 60s infinite linear;
+}
+
+@keyframes bgmove {
+  0% {
+    background-position: 0 -28px;
+  }
+  100% {
+    background-position: -100vw -28px;
+  }
 }
 
 .gt-bg2 img {
@@ -335,15 +346,31 @@
     grid-template-columns: repeat(5, auto);
   }
 
+  .portfolio-internal {
+    display: grid;
+    grid-template-columns: repeat(4, auto) !important;
+  }
+
   .portfolio > :nth-child(1) {
     grid-column: span 5;
   }
 
-  .portfolio > :nth-child(1) .link-container {
-    opacity: 1;
+  .portfolio-internal > :nth-child(1) {
+    grid-column: span 4 !important;
   }
 
-  .portfolio > :nth-child(1) .separator {
+  .portfolio > :nth-child(1) .link-container,
+  .portfolio-internal > :nth-child(1) .link-container {
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .portfolio > :nth-child(1) .separator,
+  .portfolio-internal > :nth-child(1) .separator {
+    width: 100%;
+  }
+
+  .portfolio-internal .work {
     width: 100%;
   }
 
@@ -353,5 +380,34 @@
 
   .work:hover {
     width: 100%;
+  }
+
+  .gt-logo img {
+    top: 30%;
+    margin-left: 8px;
+  }
+
+  @keyframes bgmove {
+    0% {
+      background-position: 0 -28px;
+    }
+    100% {
+      background-position: -100vw -28px;
+    }
+  }
+
+  .work.active.gt .gt-bg-movin {
+    animation: bgmove 60s infinite linear;
+  }
+
+  .work.active.gt .gt-bg2 img {
+    left: -147.5%;
+  }
+
+  .work.active.gt .gt-logo img {
+    max-width: 50%;
+    max-height: 50%;
+    transform: translateY(-32%);
+    transition: 0.2s;
   }
 }

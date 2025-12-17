@@ -8,4 +8,6 @@
 @import "./home/port.css";
 @import "./home/edu.css";
 
+@import "./works/gt.css";
+
 @import "./projects/gametrack.css";

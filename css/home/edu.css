@@ -5,6 +5,7 @@
   z-index: 9;
   padding-bottom: 15px;
   position: relative;
+  scroll-margin-top: 3.2rem;
 }
 
 .education-box {

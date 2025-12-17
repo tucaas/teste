@@ -1,9 +1,22 @@
+.header-bg {
+  background: transparent;
+  display: block;
+  position: relative;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 9999;
+  transition: 0.8s;
+  scroll-margin-top: 999rem;
+}
+
 .header {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 154px;
+  margin: 0 auto;
 }
 
 .header-img img {
