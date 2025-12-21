@@ -68,6 +68,7 @@
 .gt-txt-1,
 .gt-txt-2 {
   width: 100%;
+  z-index: 2;
 }
 
 .gt-title {
@@ -82,6 +83,7 @@
   gap: 10px;
   margin-bottom: 12px;
   margin-top: 38px;
+  z-index: 2;
 }
 
 .gt-txt > :nth-child(-n + 4),
@@ -89,17 +91,24 @@
   margin-bottom: 24px;
 }
 
+.wireframing-bg {
+  background-color: var(--nc1);
+}
+
 .wireframing {
   display: flex;
   flex-direction: column;
+  background-color: var(--nc3);
 }
 
 .wire-img-1 {
   width: 48%;
+  z-index: 2;
 }
 
 .wire-img-2 {
   width: 60%;
+  z-index: 2;
 }
 
 .wire-img-1 img {
@@ -114,6 +123,8 @@
   display: flex;
   flex-direction: row;
   gap: 32px;
+  padding: 32px 0 12px 0;
+  z-index: 2;
 }
 
 .wire-txt-2 {
@@ -121,4 +132,151 @@
   flex-direction: row;
   gap: 32px;
   align-items: center;
+  padding: 12px 0;
+  z-index: 2;
+}
+
+.wire-txt-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: center;
+  padding: 12px 0;
+  z-index: 2;
+}
+
+.profile-screens {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.wire-txt-3 .wire-txt-box {
+  max-width: 600px;
+}
+
+.wire-img-3 {
+  width: 100%;
+}
+
+.wire-img-3 img {
+  width: 100%;
+}
+
+.wireframe8 {
+  width: 100%;
+  padding: 32px 0;
+}
+
+.wireframe8 img {
+  width: 100%;
+}
+
+.final-bg {
+  z-index: 2;
+  position: relative;
+}
+
+.final-screens {
+  display: flex;
+  flex-direction: column;
+}
+
+.final-screens-bg {
+  background-color: var(--nc1);
+  z-index: -2;
+}
+
+.inner-page-bg {
+  position: relative;
+}
+
+.inner-page-bg .spinny1 {
+  position: absolute;
+  top: 150px;
+  z-index: 1;
+}
+
+.inner-page-bg .spinny2 {
+  position: absolute;
+  top: 1200px;
+  right: 60%;
+  z-index: 1;
+}
+
+.inner-page-bg .spinny3 {
+  position: absolute;
+  rotate: -60deg;
+  top: 2800px;
+  right: 30%;
+  z-index: 1;
+}
+
+.inner-page-bg .spinny-in,
+.inner-page-bg .spinny-out {
+  opacity: 1 !important;
+}
+
+.gt-txt-1:hover .tinysquare,
+.gt-txt-2:hover .tinysquare,
+.wireframing:hover .tinysquare,
+.final-screens:hover .tinysquare {
+  width: 40px;
+}
+
+.separator-wire {
+  background-image: url(../../img/separator-exp.svg);
+  min-height: 241px;
+  margin-top: 0;
+  position: relative;
+  background-position: top;
+  rotate: 180deg;
+}
+
+@media (max-width: 1100px) {
+  .wire-txt-1,
+  .wire-txt-2,
+  .wire-txt-3,
+  .project-ctas {
+    flex-direction: column;
+  }
+
+  .work-description {
+    grid-template-columns: 1fr;
+  }
+
+  .wire-img-1 {
+    width: 100%;
+  }
+
+  .inner-page-bg .spinny3 {
+    position: absolute;
+    rotate: -60deg;
+    top: 4000px;
+    right: 55%;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .separator-wire {
+    min-height: 70px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+@media (max-width: 800px) {
+  .gt-header .gt-bg3 {
+    display: none;
+  }
+  .gt-header .gt-bg2 img {
+    left: 50%;
+  }
+  .gt-header .gt-logo img {
+    max-width: 50%;
+    max-height: 50%;
+  }
 }

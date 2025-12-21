@@ -1,6 +1,8 @@
 .portfolio {
   display: flex;
   width: 100%;
+  z-index: 3;
+  position: relative;
 }
 
 .work {
@@ -226,9 +228,9 @@
 }
 
 .iris {
-  background-image: url("../../img/Frame\ 19\ \(2\).png");
-  background-size: cover;
-  transition: 0.3s;
+  background-image: url("../../img/iris-movin-bg.png");
+  background-size: contain;
+  background-position: center;
   z-index: 8;
 }
 
@@ -253,13 +255,22 @@
 }
 
 .iris:hover {
-  background-position: bottom;
-  transition: background-position 10s;
+  animation: bgmoveup 120s infinite linear;
+}
+
+@keyframes bgmoveup {
+  0% {
+    background-position: -500px 0;
+  }
+  100% {
+    background-position: -500px -100vw;
+  }
 }
 
 .iris:hover .iris-bg2 img {
+  left: 1%;
   transform: scale(1.1) translateX(-5%);
-  transition: 0.3s;
+  transition: 0.8s;
 }
 
 .iris:hover .iris-logo img {

@@ -9,5 +9,9 @@
 @import "./home/edu.css";
 
 @import "./works/gt.css";
+@import "./works/cosmeticon.css";
+@import "./works/iris.css";
+@import "./works/bike.css";
+@import "./works/mj.css";
 
 @import "./projects/gametrack.css";

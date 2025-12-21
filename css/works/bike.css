@@ -1,0 +1,27 @@
+.inner-header-bk {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  position: relative;
+  user-select: none;
+  z-index: 8;
+}
+
+.inner-header-bk {
+  background-image: url("../../img/bike-bg.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+  z-index: 8;
+}
+
+.inner-header-bk .bike-title img {
+  position: absolute;
+  top: 37%;
+  left: 5%;
+  width: 400px;
+  max-width: 90%;
+  z-index: 9;
+  transition: 0.3s;
+}
