@@ -17,6 +17,8 @@
   justify-content: space-between;
   padding: 20px 154px;
   margin: 0 auto;
+  max-width: 1920px;
+  box-sizing: border-box;
 }
 
 .header-img {
@@ -28,18 +30,28 @@
   max-width: 85%;
 }
 
-.header-menu {
+.header-menu,
+.header-menu-mob,
+.int-menu {
   display: flex;
   gap: 32px;
 }
 
-.header-menu a {
+.header-menu-mob {
+  flex-direction: column;
+}
+
+.header-menu a,
+.header-menu-mob a,
+.int-menu a {
   padding: 5px 20px;
   gap: 20px;
   transition: all 0.1s;
 }
 
-.header-menu a:after {
+.header-menu a:after,
+.header-menu-mob a:after,
+.int-menu a:after {
   content: "";
   display: block;
   height: 4px;
@@ -50,7 +62,9 @@
   position: absolute;
 }
 
-.header-menu a:hover:after {
+.header-menu a:hover:after,
+.header-menu-mob a:hover:after,
+.int-menu a:hover:after {
   width: 32px;
 }
 
@@ -363,16 +377,17 @@ h1 {
 @media (max-width: 1600px) {
   .frame {
     height: 400px;
+    width: auto;
   }
 
   .header {
-    padding: 0 100px;
+    padding: 12px 100px;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .header {
-    padding: 0 80px;
+    padding: 12px 80px;
   }
 }
 
@@ -480,5 +495,11 @@ h1 {
   .intro-txt {
     left: 50%;
     top: 65%;
+  }
+
+  @media (max-width: 740px) {
+    .header-menu {
+      display: none;
+    }
   }
 }

@@ -24,7 +24,7 @@
 
 <body>
   <header class="header-bg" id="header-menu">
-    <div class="container header">
+    <div class="header">
       <div class="header-img">
         <a href="#header-menu">
           <img src="./img/logo.svg" alt="tuca barcelos">
@@ -35,6 +35,21 @@
         <li><a class="c1 fmenu" href="#experiences">experiences</a></li>
         <li><a class="c1 fmenu" href="#education">education</a></li>
       </ul>
+      <div class="dropdown">
+        <button class="dropbtn" onclick="openMenu()">
+          <a class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </button>
+        <div class="dropdown-content" id="mob-menu">
+          <a class="c1 fmenu" href="#about">about me</a>
+          <a class="c1 fmenu" href="#experiences">experiences</a>
+          <a class="c1 fmenu" href="#education">education</a>
+        </div>
+      </div>
     </div>
   </header>
 

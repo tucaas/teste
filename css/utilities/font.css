@@ -3,6 +3,11 @@
   letter-spacing: 0.1em;
 }
 
+.fmenu2 {
+  font: 900 1rem/1.5 "Red Hat Display", sans-serif;
+  letter-spacing: 0.1em;
+}
+
 .fscroll {
   font: 300 1.5rem/1.5 "Red Hat Display", sans-serif;
   letter-spacing: 0.1em;
